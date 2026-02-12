@@ -4,7 +4,6 @@
 A professional implementation of **Apache Kafka** with **Spring Boot**, featuring both simple String and complex JSON message handling.
 
 ## 🔄 System Architecture
-> **Note:** This diagram renders automatically on GitHub.
 ![img_1.png](img_1.png)
 
 
