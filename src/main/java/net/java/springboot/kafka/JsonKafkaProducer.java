@@ -9,9 +9,14 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service responsible for publishing JSON messages to Kafka.
+ * It uses KafkaTemplate to send complex User objects as payload.
+ */
 @Service
 public class JsonKafkaProducer {
 
+    // ... logger and constructor ...
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonKafkaProducer.class);
 
     private KafkaTemplate<String, User> kafkaTemplate;
@@ -20,6 +25,11 @@ public class JsonKafkaProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
+    /**
+     * Publishes a User object to the 'json-java-topic'.
+     * The payload is wrapped in a Spring Message to include custom headers.
+     * * @param data The User object to be sent.
+     */
     public void sendMessage(User data){
         LOGGER.info(String.format("Message sent -> %s", data.toString()));
 
