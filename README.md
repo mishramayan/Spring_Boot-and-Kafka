@@ -1,11 +1,6 @@
 # Spring_Boot-and-Kafka
 
 # Spring Boot & Kafka Integration
-
-A professional implementation of **Apache Kafka** with **Spring Boot**, featuring both simple String and complex JSON message handling.
-
-# Spring Boot & Kafka Integration
-
 A professional implementation of **Apache Kafka** with **Spring Boot**, featuring both simple String and complex JSON message handling.
 
 ## 🔄 System Architecture
